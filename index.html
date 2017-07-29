@@ -1,65 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SummerViz</title>
-     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-    
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
-<style>
-  body { margin:0; padding:0; }
-  #map { position:relative; top:0; bottom:0; width:800px; height: 600px; margin: 0 auto;  margin-top: 15px;}
-  input {font-size: 24px;}
-  select { font-size: 20px; padding: 10px; }
-  #categories { position:relative; width:800px; height: 75px; margin: 0 auto; }
-  
-</style>
-</head>
-<body align=center>
-<div id="header" align=center>
-	<h1 id="mytitle">Melbourne Pedestrian Count</h1>
-	<div>
-	<input type="date" id="mydate" onchange="updateSensors()"/>
-	<input type="number" id="mytime" value="0" min="0" max="23"/>
+<html>
+<title>GovHack2017 Super_Road_Analytics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-    <select id="mode">
-        <option value="temp">Cold/Hot</option>
-        <option value="weekday">Weekday/Weekend</option>
-    </select>
-
+<div class="w3-container w3-teal">
+<h1>Summer Holiday</h1>
 </div>
 
-<div style="margin-top:20px">
-	<img src="images/lightning.png" id="incident" width=80 style="cursor:pointer"/> <!--onmouseover="setImg('lightning')" onmouseout="setImg('dino')" o/>-->
-	<!--
-	<script>
-	function setImg(img){
-	
-	var myimg = document.getElementById("incident");
-	if(img == "dino") {
-	myimg.src = "images/dino.png";
-	myimg.width = 80;
-	}
-	
-	else if(img == "lightning") {
-	myimg.src = "images/lightning.png";
-	myimg.width = 40;
-	}
-	}
-	</script>
-	-->
-	
-	</div>
-<div id="map"></div>
-<div id="categories"></div>
-<div id="footer">
-	<!--<input id="myslider" type="range" style="width:800px"  min="0" max="100" onchange="sliderChanged(this)" />-->
-</div>
-    <svg class="canvas" width="960px" height="600px"></svg>
-   <script src="src/script6.js"> </script>
-  
-</body>
-</html>
+<div class="w3-row-padding w3-margin-top">
 
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="img_5terre.jpg" style="width:100%">
+<div class="w3-container">
+<h4>5 Terre</h4>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="img_monterosso.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Monterosso</h4>
+</div>
+</div>
+</div>
